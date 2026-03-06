@@ -288,6 +288,8 @@ Durante o desenvolvimento desta atividade foram trabalhados conceitos importante
 
 **Paolla Paula Veronez**
 
+Estudante de desenvolvimento de sistemas
+
 Projeto desenvolvido para fins educacionais utilizando **HTML, CSS e JavaScript**.
 
 ---
