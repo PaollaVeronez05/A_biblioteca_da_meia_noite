@@ -1,6 +1,8 @@
 
-
 # 📚 A Biblioteca da Meia-Noite — Website Interativo em JavaScript
+![HTML5](https://img.shields.io/badge/HTML5-Estrutura-orange?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-Estilização-blue?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-Interatividade-yellow?logo=javascript&logoColor=black)
 
 Projeto educacional desenvolvido utilizando **HTML, CSS e JavaScript**, inspirado no livro **“A Biblioteca da Meia-Noite” de Matt Haig**.
 
