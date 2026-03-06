@@ -1,193 +1,177 @@
+//  DADOS 
+var capitulos = [
+  { num:"I",    titulo:"19 Anos Atrás",            desc:"Nora recorda sua infância e as primeiras escolhas que moldaram quem ela se tornaria.",                  citacao:"Cada peixe morto era uma decisão." },
+  { num:"II",   titulo:"A Noite mais Escura",       desc:"Um dia repleto de perdas que se acumulam até o limite do suportável.",                                  citacao:"O passado ainda dói." },
+  { num:"III",  titulo:"Escuridão",                 desc:"Nora toma uma decisão irreversível e atravessa a fronteira entre o mundo dos vivos e algo mais.",       citacao:"00:00. Tudo é possível." },
+  { num:"IV",   titulo:"A Biblioteca",              desc:"Nora se encontra numa biblioteca infinita suspensa entre a vida e a morte, guiada pela Sra. Elm.",      citacao:"Bem-vinda à Biblioteca da Meia-Noite." },
+  { num:"V",    titulo:"Livro dos Arrependimentos", desc:"Um livro especial lista todas as escolhas que Nora lamenta — e cada uma abre a porta de outra vida.",   citacao:"Um livro pesado de possibilidades." },
+  { num:"VI",   titulo:"Nova Vida",                 desc:"Nora começa a explorar vidas alternativas, descobrindo o que poderia ter sido se tivesse escolhido diferente.", citacao:"Cada escolha abre uma nova porta." },
+  { num:"VII",  titulo:"Glaciologista",             desc:"Numa das vidas, Nora é cientista no Ártico, descobrindo que a solidão pode ser uma forma de liberdade.", citacao:"O gelo guarda memórias de milênios." },
+  { num:"VIII", titulo:"Rockstar",                  desc:"Nora vive a fama que rejeitou — palcos, multidões e o vazio que nenhum aplauso consegue preencher.",    citacao:"O sucesso tem o sabor do que você abriu mão." },
+  { num:"IX",   titulo:"O Peso do Possível",        desc:"Após tantas vidas exploradas, Nora começa a entender o verdadeiro significado de uma vida bem vivida.", citacao:"Não existe vida perfeita, apenas vida." },
+  { num:"X",    titulo:"Querer Viver",              desc:"A decisão final de Nora — e a descoberta de que a vida que ela tinha valia mais do que imaginava.",     citacao:"Ela queria viver. Por fim, ela queria viver." }
+];
 
-      var capitulos = [
-        { num: "I", titulo: "19 Anos Atrás", desc: "Nora recorda sua infância — os peixes que ela deixou morrer, as escolhas que moldaram sua vida.", citacao: "Cada peixe morto era uma decisão não tomada." },
-        { num: "II", titulo: "A Noite mais Escura", desc: "Um dia de perdas se acumula: emprego, gato, amigo. Nora confronta o peso do arrependimento.", citacao: "O passado é o presente que ainda não terminou de doer." },
-        { num: "III", titulo: "Escuridão", desc: "A decisão de Nora. O momento em que a vida e a morte se encontram no limiar da meia-noite.", citacao: "00:00. O único momento em que tudo é possível." },
-        { num: "IV", titulo: "A Biblioteca", desc: "Nora desperta entre estantes infinitas. A Sra. Elm a recebe neste lugar entre todos os possíveis.", citacao: "Bem-vinda à Biblioteca da Meia-Noite." },
-        { num: "V", titulo: "O Livro dos Arrependimentos", desc: "Um volume escrito com a tinta dos 'e se...'. Cada página, uma vida não vivida.", citacao: "O livro era pesado com todas as escolhas não feitas." },
-        { num: "VI", titulo: "A Vida Glaciologista", desc: "Nora entra numa vida onde seguiu seu sonho científico. Gelo e silêncio na Groenlândia.", citacao: "Naquele silêncio ártico, ela era finalmente livre." },
-        { num: "VII", titulo: "Cambridge", desc: "Uma vida de academia e filosofia pura. O que é uma vida bem vivida?", citacao: "A filosofia era a arte de fazer as perguntas certas." },
-        { num: "VIII", titulo: "A Nadadora Olímpica", desc: "Com seu irmão como treinador, Nora conquista medalhas. O preço do sucesso é a conexão perdida.", citacao: "Ouro. Mas o pódio era um lugar solitário." },
-        { num: "IX", titulo: "A Fazenda", desc: "Uma vida rural, longe do caos urbano. Simplicidade que esconde complexidades próprias.", citacao: "A terra não mente. Ela simplesmente é." },
-        { num: "X", titulo: "Noite de Rock", desc: "O palco. A banda que ela deixou para trás. Uma plateia que nunca chegou a conhecê-la.", citacao: "A música era o idioma que ela esqueceu de falar." },
-        { num: "XI", titulo: "A Vida Australiana", desc: "Um mergulho nas profundezas do oceano Índico. Outro sonho perseguido, outra solidão encontrada.", citacao: "No fundo do mar, a pressão era diferente, mas presente." },
-        { num: "XII", titulo: "Casada com Dan", desc: "A vida que poderia ter sido. Um subúrbio tranquilo e os questionamentos que ele carrega.", citacao: "Felicidade é uma arte que precisa ser praticada." },
-        { num: "XIII", titulo: "A Filosofia da Decepção", desc: "Nora aprende que as vidas que imaginou serem perfeitas guardam suas próprias sombras.", citacao: "A decepção é apenas expectativa mal direcionada." },
-        { num: "XIV", titulo: "Vinhos e Vinhedos", desc: "Uma vida no coração da Toscana. Uvas, vinho, e a solidão elegante de quem está sempre de passagem.", citacao: "O vinho guarda a memória da terra." },
-        { num: "XV", titulo: "A Celebridade", desc: "Fama, dinheiro, o mundo aos seus pés — e o vazio que nenhum holofote ilumina.", citacao: "Ser visto por todos e conhecido por ninguém." },
-        { num: "XVI", titulo: "Regras da Biblioteca", desc: "A Sra. Elm explica: cada vida visitada consome o livro de arrependimentos. Nora deve escolher com sabedoria.", citacao: "Cada porta aberta fecha outra para sempre." },
-        { num: "XVII", titulo: "A Veterinária", desc: "Nora cuida de animais. Encontra propósito nas criaturas que não julgam, que apenas precisam.", citacao: "Eles confiavam sem questionar. Que dádiva." },
-        { num: "XVIII", titulo: "O Olimpo Não Dura", desc: "O pódio olímpico começa a rachar. A glória tem prazo de validade.", citacao: "Toda chama, eventualmente, consome a si mesma." },
-        { num: "XIX", titulo: "A Vida Mais Improvável", desc: "Uma existência que Nora jamais teria imaginado. E ainda assim, há algo que ressoa como verdade.", citacao: "Às vezes a vida certa é a que menos esperamos." },
-        { num: "XX", titulo: "Ash", desc: "Um relacionamento que ela abandonou. Ao revisitá-lo, Nora entende o que a conexão genuína significa.", citacao: "Amar é o ato mais corajoso." },
-        { num: "XXI", titulo: "A Biblioteca Treme", desc: "Algo está errado. As prateleiras vibram. O livro de arrependimentos enfraquece.", citacao: "A eternidade, descobriu Nora, também tem seus limites." },
-        { num: "XXII", titulo: "Vidas Paralelas", desc: "Nora observa versões de si mesma que nunca se conhecerão — e sente compaixão por quem ela é.", citacao: "Ser humano é ser múltiplo." },
-        { num: "XXIII", titulo: "A Crise", desc: "Uma vida em colapso — não a de Nora, mas de alguém próximo que ela não soube ver.", citacao: "Às vezes salvamos os outros para nos salvar." },
-        { num: "XXIV", titulo: "Gratidão Improvável", desc: "No meio do caos de múltiplas vidas, Nora encontra um momento de quietude e beleza inesperada.", citacao: "A gratidão não precisa de razão para existir." },
-        { num: "XXV", titulo: "O Fim da Biblioteca?", desc: "As prateleiras começam a desaparecer. O tempo se esgota. Nora precisa tomar a decisão definitiva.", citacao: "Toda biblioteca tem seu horário de fechar." },
-        { num: "XXVI", titulo: "A Chave", desc: "Nora descobre: não é a vida perfeita que ela busca, mas a vida autenticamente sua.", citacao: "A chave não abre uma porta — ela abre os olhos." },
-        { num: "XXVII", titulo: "Caos e Clareza", desc: "As últimas vidas. As últimas chances. Cada escolha ilumina algo novo sobre quem Nora realmente é.", citacao: "No caos, há sempre um fio de clareza." },
-        { num: "XXVIII", titulo: "O Momento Raiz", desc: "Nora retorna ao instante fundamental — a escolha original que ramificou todas as outras.", citacao: "Algumas decisões moldam todas as outras." },
-        { num: "XXIX", titulo: "Ela Mesma", desc: "A revelação: a única vida que Nora nunca explorou completamente foi a sua própria.", citacao: "O lugar mais inexplorado do mundo é você mesmo." },
-        { num: "XXX", titulo: "A Escolha Final", desc: "Com o livro quase vazio e a biblioteca a desaparecer, Nora faz a escolha que muda tudo.", citacao: "Querer viver é a forma mais pura de esperança." },
-        { num: "XXXI", titulo: "O Despertar", desc: "Nora acorda. O mundo é o mesmo — e completamente diferente. Ela é a mesma — e completamente diferente.", citacao: "O sol nasceu. E ela estava lá para vê-lo." },
-        { num: "XXXII", titulo: "Pequenas Maravilhas", desc: "Os detalhes ordinários da vida ganham uma luminosidade nova. O café. A rua. Um gato.", citacao: "Estar vivo é o milagre mais subestimado." },
-        { num: "XXXIII", titulo: "Possibilidades Infinitas", desc: "A última página. Nora compreende que cada momento presente é uma biblioteca inteira de futuros possíveis.", citacao: "A vida, Nora percebeu, sempre valeu a pena." },
-      ];
+var cores = ["#2a5c8a","#6b3a7d","#8a4a2a","#2a7a5a","#7a6a2a","#5a2a6a","#2a4a8a","#7a2a4a","#3a7a2a","#6a4a2a"];
 
-      var coresLivros = [
-        { fundo: '#1a4a2e', texto: '#4caf6e' }, { fundo: '#2d7a4a', texto: '#7ecf96' },
-        { fundo: '#0f2d1a', texto: '#3d8f5a' }, { fundo: '#1e5a36', texto: '#5abf7a' },
-        { fundo: '#163d25', texto: '#4caf6e' }, { fundo: '#245e38', texto: '#6bc98a' },
-        { fundo: '#0d2618', texto: '#2d7a4a' }, { fundo: '#2a6b40', texto: '#7ecf96' },
-        { fundo: '#1a2e3a', texto: '#7eb8d4' }, { fundo: '#2a1a3a', texto: '#b09fd4' },
-        { fundo: '#3a1a2a', texto: '#d4a0b8' }, { fundo: '#f0f7ee', texto: '#1a4a2e' },
-      ];
-      var larguras = [22, 26, 18, 30, 24, 20, 28, 16, 32, 22, 18, 26];
-      var alturas = [110,140,120,130,100,145,115,135,108,125,138,118,122,112,142,128,105,132,118,145,108,125,115,138,120,130,112,140,122,108,135,118,128];
+//  RELÓGIO 
+var seg = 0;
+setInterval(function(){
+  seg++;
+  var el = document.getElementById("relogio");
+  if(el) el.textContent = String(Math.floor(seg/60)).padStart(2,"0") + ":" + String(seg%60).padStart(2,"0");
+}, 1000);
 
-      function escurecerCor(hex) {
-        var n = parseInt(hex.slice(1), 16);
-        var r = Math.max(0, (n >> 16) - 18);
-        var g = Math.max(0, ((n >> 8) & 0xff) - 18);
-        var b = Math.max(0, (n & 0xff) - 18);
-        return '#' + [r, g, b].map(function(c) { return c.toString(16).padStart(2, '0'); }).join('');
-      }
+//  ESTRELAS 
+var canvas = document.getElementById("estrelas");
+var ctx = canvas.getContext("2d");
+var stars = [];
 
-      function criarEl(tag, cls, estilos, pai) {
-        var el = document.createElement(tag);
-        if (cls) el.className = cls;
-        if (estilos) el.style.cssText = estilos;
-        if (pai) pai.appendChild(el);
-        return el;
-      }
+function resizeCanvas(){ canvas.width = innerWidth; canvas.height = innerHeight; }
+resizeCanvas();
+window.addEventListener("resize", resizeCanvas);
 
-      // Estrelas
-      (function () {
-        var canvas = document.getElementById('estrelas');
-        var ctx = canvas.getContext('2d');
-        function resize() { canvas.width = innerWidth; canvas.height = innerHeight; }
-        resize();
-        addEventListener('resize', resize);
-        var stars = [];
-        for (var i = 0; i < 100; i++) {
-          stars.push({ x: Math.random() * canvas.width, y: Math.random() * canvas.height, r: Math.random() * 1.2 + 0.2, vel: Math.random() * 0.006 + 0.002, fase: Math.random() * Math.PI * 2 });
-        }
-        (function loop(t) {
-          ctx.clearRect(0, 0, canvas.width, canvas.height);
-          stars.forEach(function(s) {
-            ctx.beginPath();
-            ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
-            ctx.fillStyle = 'rgba(168,221,184,' + ((Math.sin(t * s.vel + s.fase) + 1) / 2 * 0.7 + 0.1) + ')';
-            ctx.fill();
-          });
-          requestAnimationFrame(loop);
-        })(0);
-      })();
+for(var i = 0; i < 160; i++)
+  stars.push({ x:Math.random()*innerWidth, y:Math.random()*innerHeight, r:Math.random()*.8+.2, a:Math.random(), da:(.002+Math.random()*.004)*(Math.random()<.5?1:-1) });
 
-      // Livros decorativos
-      (function () {
-        var cores = ['#1a4a2e','#2d7a4a','#0f2d1a','#1e5a36','#163d25','#1a2e3a','#f0f7ee','#2a1a3a'];
-        ['livros-topo', 'livros-base'].forEach(function(id) {
-          var container = document.getElementById(id);
-          var isTopo = id === 'livros-topo';
-          for (var i = 0; i < 55; i++) {
-            var w = 16 + ~~(Math.random() * 22), h = 70 + ~~(Math.random() * 80);
-            var atraso = (Math.random() * 1.5).toFixed(2) + 's';
-            criarEl('div', 'livro-deco',
-              'width:' + w + 'px;height:' + h + 'px;background:' + cores[~~(Math.random() * cores.length)] + ';border-radius:' + (isTopo ? '0 0 2px 2px' : '2px 2px 0 0') + ';animation:' + (isTopo ? 'cai' : 'sobe') + ' 2s ease ' + atraso + ' forwards;transform:translateY(' + (isTopo ? '-100%' : '100%') + ')',
-              container);
-          }
-        });
-      })();
+(function draw(){
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  stars.forEach(function(s){
+    s.a += s.da;
+    if(s.a>1||s.a<0) s.da *= -1;
+    ctx.beginPath();
+    ctx.arc(s.x, s.y, s.r, 0, Math.PI*2);
+    ctx.fillStyle = "rgba(168,221,184,"+s.a+")";
+    ctx.fill();
+  });
+  requestAnimationFrame(draw);
+})();
 
-      // Relógio
-      (function () {
-        var s = 0;
-        setInterval(function() {
-          s = (s + 1) % 3600;
-          document.getElementById('relogio').textContent = String(~~(s / 60)).padStart(2, '0') + ':' + String(s % 60).padStart(2, '0');
-        }, 1000);
-      })();
+//  PÁGINAS VOANDO 
+var frases = [
+  "Entre a vida e a morte existe uma biblioteca.",
+  "Cada escolha abre uma nova porta.",
+  "Ela queria viver.",
+  "O passado ainda dói.",
+  "00:00. Tudo é possível.",
+  "Cada peixe morto era uma decisão.",
+  "Bem-vinda à Biblioteca da Meia-Noite.",
+  "Não existe vida perfeita, apenas vida.",
+  "Um livro pesado de possibilidades.",
+  "O gelo guarda memórias de milênios.",
+  "Nora. Nora Seed.",
+  "A Sra. Elm sorriu.",
+  "Qual vida você escolheria?",
+  "Arrependimentos infinitos.",
+  "O livro estava esperando por ela."
+];
 
-      // Transição
-      function entrarNaBiblioteca() {
-        var splash = document.getElementById('splash');
-        var anim = document.getElementById('animacao-livro');
-        splash.style.opacity = '0';
-        setTimeout(function() {
-          splash.style.display = 'none';
-          anim.style.display = 'flex';
-          setTimeout(function() {
-            anim.style.transition = 'opacity 0.5s ease';
-            anim.style.opacity = '0';
-            setTimeout(function() { anim.style.display = 'none'; mostrarBiblioteca(); }, 500);
-          }, 2200);
-        }, 500);
-      }
+function lancarPaginas() {
+  var overlay = document.getElementById("paginas-overlay");
+  overlay.innerHTML = "";
+  var total = 22;
 
-      function mostrarBiblioteca() {
-        var bib = document.getElementById('biblioteca');
-        bib.style.display = 'block';
-        bib.style.overflowY = 'auto';
-        document.body.style.overflow = 'auto';
-        document.body.style.height = 'auto';
-        criarPrateleiras();
-        criarParticulas();
-        setTimeout(function() { bib.style.opacity = '1'; }, 50);
-      }
+  for (var i = 0; i < total; i++) {
+    (function(i) {
+      setTimeout(function() {
+        var p = document.createElement("div");
+        p.className = "pagina";
 
-      function criarPrateleiras() {
-        var container = document.getElementById('prateleiras');
-        var dist = [6, 6, 6, 6, 6, 3];
-        var nomes = ['I','II','III','IV','V','VI'];
-        var idx = 0;
-        dist.forEach(function(qtd, i) {
-          var secao = criarEl('div', 'secao-prateleira', null, container);
-          var rotulo = criarEl('div', 'rotulo-prateleira', null, secao);
-          rotulo.textContent = 'Prateleira ' + nomes[i] + ' \u2014 Cap\u00EDtulos ' + (idx + 1) + '\u2013' + Math.min(idx + qtd, capitulos.length);
-          var prat = criarEl('div', 'prateleira', null, secao);
-          for (var j = 0; j < qtd && idx < capitulos.length; j++, idx++) {
-            var cap = capitulos[idx], cor = coresLivros[idx % 12];
-            var livro = criarEl('div', 'livro', 'width:' + larguras[idx % 12] + 'px;height:' + alturas[idx] + 'px', prat);
-            livro.title = 'Cap. ' + cap.num + ': ' + cap.titulo;
-            var interior = criarEl('div', 'livro-interior', 'background:linear-gradient(180deg,' + cor.fundo + ',' + escurecerCor(cor.fundo) + ')', livro);
-            var num = criarEl('div', 'livro-num', 'color:' + cor.texto + '99', interior);
-            num.textContent = cap.num;
-            var tit = criarEl('div', 'livro-titulo-lombada', 'color:' + cor.texto + 'bb', interior);
-            tit.textContent = cap.titulo;
-            (function(capturedIdx, livroEl) {
-              livroEl.onclick = function() { abrirModal(capturedIdx, livroEl); };
-            })(idx, livro);
-          }
-          criarEl('div', 'tabua', null, secao);
-        });
-      }
+        // posição inicial: distribuída pela largura, começando no centro vertical
+        var startX = 10 + Math.random() * 80; // % da tela
+        var startY = 30 + Math.random() * 40;
+        p.style.left = startX + "vw";
+        p.style.top  = startY + "vh";
 
-      function criarParticulas() {
-        var container = document.getElementById('particulas');
-        for (var i = 0; i < 18; i++) {
-          criarEl('div', 'particula', 'left:' + (Math.random()*100) + '%;bottom:' + (Math.random()*30) + '%;--dur:' + (4+Math.random()*8) + 's;--delay:' + (Math.random()*10) + 's', container);
-        }
-      }
+        // direção e rotação aleatórias
+        var dx = (Math.random() - 0.5) * 160; // px horizontal
+        var dy = -(80 + Math.random() * 220);  // sempre sobe
+        var rot = (Math.random() - 0.5) * 540; // gira bastante
+        var dur = 1.2 + Math.random() * 1.2;   // duração entre 1.2s e 2.4s
 
-      function abrirModal(idx, livroEl) {
-        var cap = capitulos[idx];
-        document.getElementById('modal-numero').textContent = 'Cap\u00EDtulo ' + cap.num;
-        document.getElementById('modal-titulo').textContent = cap.titulo;
-        document.getElementById('modal-descricao').textContent = cap.desc;
-        document.getElementById('modal-citacao').textContent = '\u201C' + cap.citacao + '\u201D';
-        document.querySelectorAll('.livro.selecionado').forEach(function(l) { l.classList.remove('selecionado'); });
-        livroEl.classList.add('selecionado');
-        document.getElementById('modal').classList.add('aberto');
-      }
+        p.style.setProperty("--dx", dx + "px");
+        p.style.setProperty("--dy", dy + "px");
+        p.style.setProperty("--rot", rot + "deg");
+        p.style.animation = "pagina-voa " + dur + "s ease-out forwards";
 
-      function fecharModal(e, forcado) {
-        var modal = document.getElementById('modal');
-        if (forcado || (e && e.target === modal)) {
-          modal.classList.remove('aberto');
-          document.querySelectorAll('.livro.selecionado').forEach(function(l) { l.classList.remove('selecionado'); });
-        }
-      }
-  
-  
+        // frase aleatória dentro da página
+        var frase = document.createElement("span");
+        frase.className = "pagina-frase";
+        frase.textContent = frases[Math.floor(Math.random() * frases.length)];
+        p.appendChild(frase);
+
+        overlay.appendChild(p);
+
+        // remove do DOM após a animação terminar
+        setTimeout(function(){ p.remove(); }, dur * 1000 + 100);
+      }, i * 80); // cada página sai 80ms depois da anterior
+    })(i);
+  }
+}
+
+//  ENTRAR 
+document.getElementById("btn-entrar").addEventListener("click", function(){
+  var splash = document.getElementById("splash");
+  var bib    = document.getElementById("biblioteca");
+
+  lancarPaginas(); // 📄 páginas voam!
+
+  splash.style.opacity = "0";
+  splash.style.pointerEvents = "none";
+  setTimeout(function(){
+    splash.style.display = "none";
+    bib.style.display = "flex";
+    bib.style.opacity = "0";
+    setTimeout(function(){ bib.style.transition = "opacity .8s"; bib.style.opacity = "1"; }, 20);
+    criarLivros();
+  }, 600);
+});
+
+// LIVROS 
+function criarLivros(){
+  var container = document.getElementById("prateleiras");
+  container.innerHTML = "";
+  var metade = Math.ceil(capitulos.length / 2);
+
+  ["Primeira Parte","Segunda Parte"].forEach(function(nome, gi){
+    var rotulo = document.createElement("p");
+    rotulo.className = "rotulo-prateleira";
+    rotulo.textContent = nome;
+    container.appendChild(rotulo);
+
+    var prat = document.createElement("div");
+    prat.className = "prateleira";
+
+    capitulos.slice(gi*metade, gi*metade+metade).forEach(function(cap, li){
+      var idx = gi*metade + li;
+      var livro = document.createElement("div");
+      livro.className = "livro";
+      livro.style.cssText = "background:"+cores[idx%cores.length]+";height:"+(110+Math.floor(Math.random()*50))+"px;";
+      livro.innerHTML = '<div class="livro-interior"><span class="livro-num">'+cap.num+'</span><span class="livro-titulo-lombada">'+cap.titulo+'</span></div>';
+      livro.onclick = function(){ abrirModal(idx); };
+      prat.appendChild(livro);
+    });
+
+    container.appendChild(prat);
+    var tabua = document.createElement("div");
+    tabua.className = "tabua";
+    container.appendChild(tabua);
+  });
+}
+
+//  MODAL 
+function abrirModal(i){
+  var cap = capitulos[i];
+  document.getElementById("modal-numero").textContent    = "Capítulo " + cap.num;
+  document.getElementById("modal-titulo").textContent    = cap.titulo;
+  document.getElementById("modal-descricao").textContent = cap.desc;
+  document.getElementById("modal-citacao").textContent   = "\u201c" + cap.citacao + "\u201d";
+  document.getElementById("modal").classList.add("aberto");
+}
+
+function fecharModal(){ document.getElementById("modal").classList.remove("aberto"); }
+
+document.getElementById("modal-fechar").onclick = fecharModal;
+document.getElementById("modal").onclick = function(e){ if(e.target===this) fecharModal(); };
+document.addEventListener("keydown", function(e){ if(e.key==="Escape") fecharModal(); });
+

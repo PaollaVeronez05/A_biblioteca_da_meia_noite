@@ -1,65 +1,74 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>A Biblioteca da Meia-Noite</title>
-    <meta name="description" content="A Biblioteca da Meia-Noite - Matt Haig" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Space+Mono:wght@400;700&family=Lora:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    
-  </head>
-  <body>
-    <canvas id="estrelas"></canvas>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>A Biblioteca da Meia-Noite</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Space+Mono:wght@400;700&family=Lora:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <div id="splash">
-      <div class="livros-decorativos topo" id="livros-topo"></div>
-      <div class="livros-decorativos base" id="livros-base"></div>
-      <div id="splash-conteudo">
-        <p class="autor">Matt Haig</p>
-        <h1 class="titulo-splash">A Biblioteca<br>da Meia‑Noite</h1>
-        <p class="subtitulo">Entre e descubra as vidas que você poderia ter vivido</p>
-        <p id="relogio">00:00</p>
-        <button id="btn-entrar" onclick="entrarNaBiblioteca()">✦ Entrar na Biblioteca ✦</button>
-      </div>
+  <canvas id="estrelas"></canvas>
+
+  <!-- SPLASH -->
+  <div id="splash">
+    <div id="splash-conteudo">
+      <p class="autor">Matt Haig</p>
+      <h1 class="titulo-splash">A Biblioteca<br>da Meia‑Noite</h1>
+      <p class="subtitulo">Entre e descubra as vidas que você poderia ter vivido</p>
+      <p id="relogio">00:00</p>
+      <button id="btn-entrar">✦ Entrar na Biblioteca ✦</button>
     </div>
+  </div>
 
-    <div id="animacao-livro">
-      <div class="livro-3d">
-        <div class="capa">
-          <span class="capa-autor">Matt Haig</span>
-          <span class="capa-titulo">A Biblioteca<br>da Meia‑Noite</span>
-        </div>
-      </div>
-    </div>
+  <!-- BIBLIOTECA -->
+  <div id="biblioteca">
 
-    <div id="biblioteca">
-      <header id="biblioteca-cabecalho">
-        <p class="autor">Matt Haig</p>
-        <h1 class="titulo">A Biblioteca<br>da Meia‑Noite</h1>
-        <p class="frase">"Entre a vida e a morte existe uma biblioteca.<br>E nas prateleiras existem livros infinitos,<br>cada um com a chance de tentar outra vida."</p>
-      </header>
-      <p class="dica">↓ Clique em um livro para explorar o capítulo ↓</p>
-      <div id="prateleiras"></div>
+    <!-- coluna esquerda: síntese -->
+    <aside id="bib-lado">
+      <p class="autor">Matt Haig</p>
+      <div class="bib-divisor"></div>
+      <p class="sintese">Nora Seed chega à meia-noite de uma segunda-feira ao limite do que pode suportar. Mas entre a vida e a morte existe uma biblioteca — e cada livro nas prateleiras é uma vida que ela poderia ter vivido se tivesse escolhido diferente. Com a ajuda da Sra. Elm, Nora embarca numa jornada por possibilidades infinitas em busca da única coisa que importa: uma razão para continuar.</p>
       <footer class="rodape">Bertrand Brasil · © Matt Haig</footer>
-      <div id="particulas"></div>
-    </div>
+    </aside>
 
-    <div id="modal" onclick="fecharModal(event)">
-      <div class="modal-caixa" onclick="event.stopPropagation()">
-        <button id="modal-fechar" onclick="fecharModal(null,true)">✕</button>
-        <p id="modal-numero"></p>
-        <h2 id="modal-titulo"></h2>
-        <div class="modal-linha"></div>
-        <p id="modal-descricao"></p>
-        <blockquote id="modal-citacao"></blockquote>
-      </div>
-    </div>
+    <!-- coluna direita: título + prateleiras -->
+    <main id="bib-estante">
+      <header id="bib-topo">
+        <h1 class="titulo-distribuido">
+          <div class="titulo-linha">
+            <span>A BIBLIOTECA</span>
+            
+          </div>
+          <div class="titulo-linha">
+            <span>DA</span>
+            
+          </div>
+          <div class="titulo-linha">
+            <span>MEIA-NOITE</span>
+          </div>
+        </h1>
+        <div class="bib-divisor"></div>
+      </header>
+      <div id="prateleiras"></div>
+    </main>
 
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-    <script src="script.js"></script>
-    
-  </body>
+  </div>
+
+  <!-- MODAL -->
+  <div id="modal">
+    <div class="modal-caixa">
+      <button id="modal-fechar">✕</button>
+      <p id="modal-numero"></p>
+      <h2 id="modal-titulo"></h2>
+      <div class="modal-linha"></div>
+      <p id="modal-descricao"></p>
+      <blockquote id="modal-citacao"></blockquote>
+    </div>
+  </div>
+
+  <div id="paginas-overlay"></div>
+  <script src="script.js"></script>
+</body>
 </html>
