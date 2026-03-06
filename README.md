@@ -283,6 +283,14 @@ Durante o desenvolvimento desta atividade foram trabalhados conceitos importante
 * desenvolvimento de interfaces responsivas
 
 ---
+## 🔗 Acessar o Projeto
+
+Você pode visualizar o projeto funcionando através do link abaixo:
+
+🌐 **Projeto Online:**  
+[🔗 Clique aqui para acessar o site](https://a-biblioteca-da-meia-noite.netlify.app/)
+
+---
 
 # 👩‍💻 Autora
 
